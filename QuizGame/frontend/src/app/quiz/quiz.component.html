@@ -1,0 +1,47 @@
+<div class="background">
+  <div class="container">
+    <div class="radio-container" *ngFor="let number of numbers">
+      <label id="radio-group-label">{{ quiz.questions[number] }}</label>
+      <mat-radio-group
+        class="radio-group"
+        aria-labelledby="example-radio-group-label"
+        [(ngModel)]="option[number]"
+      >
+        <mat-radio-button
+          *ngFor="let item of questions"
+          [value]="quiz.answers[number][item]"
+        >
+          <div
+            class="options"
+            [ngStyle]="{
+              color:
+                this.option[number] === this.quiz.answers[number].correctAnswer
+                  ? color[number]
+                  : color[number]
+            }"
+          >
+            {{ quiz.answers[number][item] }}
+          </div>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="btn">
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="submitisdisabled"
+        (click)="submit()"
+      >
+        Submit
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="nextisdisabled"
+        (click)="next()"
+      >
+        See results
+      </button>
+    </div>
+  </div>
+</div>

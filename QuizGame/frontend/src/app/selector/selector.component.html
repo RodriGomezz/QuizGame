@@ -1,0 +1,19 @@
+<div class="background">
+  <div class="container">
+    <mat-form-field>
+      <mat-label>Select</mat-label>
+      <mat-select [(ngModel)]="selectedValue" name="options" required>
+        <mat-option *ngFor="let option of options" [value]="option.value">{{
+          option.viewValue
+        }}</mat-option>
+      </mat-select>
+      <mat-error>Select an option</mat-error>
+    </mat-form-field>
+
+    <div>
+      <button mat-raised-button color="primary" (click)="submit(selectedValue)">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>

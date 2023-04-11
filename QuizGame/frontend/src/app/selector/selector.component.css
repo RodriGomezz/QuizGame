@@ -1,0 +1,12 @@
+.background {
+  background-color: rgb(32, 32, 155);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+}
