@@ -1,0 +1,37 @@
+.background {
+  background-color: rgb(32, 32, 155);
+  /* height: 100vh; */
+  color: white;
+  padding-bottom: 5rem;
+}
+
+.radio-container {
+  display: grid;
+  place-items: center;
+}
+
+.radio-group {
+  display: grid;
+  background-color: white;
+  width: 35rem;
+  border-radius: 12px;
+  padding: 7px;
+}
+
+#radio-group-label {
+  color: orangered;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 4rem auto 1rem;
+}
+
+.options {
+  font-size: 21px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}

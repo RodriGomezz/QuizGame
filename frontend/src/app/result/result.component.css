@@ -1,0 +1,44 @@
+.background {
+  background-color: rgb(32, 32, 155);
+  height: 100vh;
+  color: white;
+}
+
+.result {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding-top: 10em;
+}
+
+.total {
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.correct {
+  text-align: center;
+  color: green;
+  background-color: greenyellow;
+  padding: 30px;
+  border-radius: 12px 0 0 12px;
+  font-size: 37px;
+}
+
+.incorrect {
+  text-align: center;
+  color: red;
+  background-color: rgb(141, 25, 25);
+  padding: 30px;
+  border-radius: 0 12px 12px 0;
+  font-size: 37px;
+}
+
+.btn {
+  margin-top: 5em;
+}
